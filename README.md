@@ -1,10 +1,11 @@
 # img-magnifier
 
+# 暂时无法npm下载，组件可以直接在example/components/img-magnifier这个文件夹获取使用。
+
+因为之前没有试过发布组件到npm，还在探索过程中。
+
+
 > 基于 vue 的图片放大组件
-
-## img-magnifier
-
---
 
 ## 安装
 
@@ -14,8 +15,8 @@
 
 | 参数           | 描述                 | 类型   | 必填？ |
 | -------------- | -------------------- | ------ | ------ |
-| smallSrc       | 小图片的 src         | String | YES    |
-| magnifierSrc   | 放大镜图片的 src     | String | YES    |
+| smallSrc       | 小图片的 src         | String | NO    |
+| magnifierSrc   | 放大镜图片的 src     | String | NO    |
 | maskStyle      | 遮罩的样式           | Object | YES    |
 | configs        | 基本配置项           | Object | YES    |
 | maskTransEnter | 遮罩显示过渡动画样式 | Object | NO     |
