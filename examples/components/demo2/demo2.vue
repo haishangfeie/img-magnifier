@@ -10,11 +10,7 @@
 </template>
 
 <script>
-import imgMagnifier from '../../../packages/img-magnifier/index'
 export default {
-  components: {
-    imgMagnifier
-  },
   data () {
     return {
       smallImgSrc: require('../../common/img/demo.jpg'), // 小图片地址
