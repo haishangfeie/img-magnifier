@@ -1,5 +1,4 @@
 var path = require('path')
-
 module.exports = {
   configureWebpack: {
     resolve: {
@@ -12,7 +11,10 @@ module.exports = {
   productionSourceMap: false,
   pages: {
     index: {
-      entry: 'examples/main.js',
+      entry:
+        process.env.NODE_ENV === 'update'
+          ? 'update/main.js'
+          : 'examples/main.js',
       template: 'public/index.html',
       filename: 'index.html'
     }

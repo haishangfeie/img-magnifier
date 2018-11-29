@@ -2,6 +2,7 @@
 examples/
 packages/
 public/
+update/
 
 vue.config.js
 babel.config.js
