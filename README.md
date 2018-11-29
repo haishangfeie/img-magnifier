@@ -3,6 +3,45 @@
 > 基于 vue 的图片放大组件
 
 ## 安装
+在你的项目根目录下：
+
+使用 npm
+
+```bash
+npm install img-magnifier --save # 或者 cnpm install img-magnifier --save
+```
+
+## 使用
+在 `main.js` 文件中引入插件并注册
+
+```js
+# main.js
+import imgMagnifier from 'img-magnifier'
+import 'img-magnifier/lib/img-magnifier.css'
+
+Vue.use(imgMagnifier)
+```
+
+在项目中使用
+
+```html
+<img-magnifier
+  :smallSrc="smallImgSrc"
+  :magnifierSrc="magnifierSrc"
+  :maskStyle="maskStyle"
+  :maskTransEnter="maskTransEnter"
+  :maskTransLeave="maskTransLeave"
+  :configs="configs"
+></img-magnifier>
+```
+
+## 查看示例
+```bash
+# 使用npm
+npm i # 或者使用cnpm cnpm i
+# 启动
+npm run serve
+```
 
 ## API
 
@@ -10,8 +49,8 @@
 
 | 参数           | 描述                 | 类型   | 必填？ |
 | -------------- | -------------------- | ------ | ------ |
-| smallSrc       | 小图片的 src         | String | NO    |
-| magnifierSrc   | 放大镜图片的 src     | String | NO    |
+| smallSrc       | 小图片的 src         | String | NO     |
+| magnifierSrc   | 放大镜图片的 src     | String | NO     |
 | maskStyle      | 遮罩的样式           | Object | YES    |
 | configs        | 基本配置项           | Object | YES    |
 | maskTransEnter | 遮罩显示过渡动画样式 | Object | NO     |
@@ -34,16 +73,13 @@
 </template>
 
 <script>
-  import imgMagnifier from 'components/img-magnifier';
   export default {
-    components: {
-      imgMagnifier
-    },
     data() {
       return {
         smallImgSrc: '', // 小图片地址
         magnifierSrc: '', // 放大镜图片地址
         // 设置遮罩样式
+        // 这里可以根据需要设置，但至少宽高是需要设置的
         maskStyle: {
           width: '200px',
           height: '200px',
@@ -56,7 +92,7 @@
         // 注意此处是在js中设置样式，如果使用了CSS3的属性，请自行按需添加私有前缀
         maskTransEnter: {
           opacity: 0
-          // 这里仅为举例如何添加私有前缀
+          // 这里仅为举例如何添加私有前缀，请勿真的使用transform为过渡，否则会影响组件的功能
           // webkitTransform:translate3d(0,0,0)`,
           // transform:translate3d(0,0,0)`
         },

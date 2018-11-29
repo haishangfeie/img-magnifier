@@ -1,7 +1,18 @@
 {
   "name": "img-magnifier",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "description":"A Vue-based image magnification component. 基于 vue 的图片放大组件。",
+  "keywords":["vue","img","magnifier","zoom","mall"],
+  "author":{
+    "name":"wenxingjie",
+    "email":"wen_xingjie@163.com"
+  },
   "private": false,
+  "main": "lib/img-magnifier.umd.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haishangfeie/img-magnifier.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -25,5 +36,5 @@
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.5.17"
   },
-  "main": "lib/img-magnifier.umd.min.js"
+  "license":"MIT"
 }
