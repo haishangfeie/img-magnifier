@@ -180,10 +180,9 @@ export default {
   .mask
     position: absolute
     background-color: #000
-    opacity: 0.5
     left: 0
     top: 0
-    transition: opacity 0.4s
+    cursor: move
   .magnifier-area
     position: absolute
     left: 0

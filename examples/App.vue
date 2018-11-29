@@ -1,12 +1,12 @@
 <template>
   <div id="app"
        class="app">
-    <h1>图片放大组件</h1>
+    <h1 class="title">图片放大组件</h1>
     <div class="tab">
       <router-link class="btn"
-                   to="/demo1">demo1</router-link>
+                   to="/demo1">普通效果</router-link>
       <router-link class="btn"
-                   to="/demo2">demo2</router-link>
+                   to="/demo2">淡入淡出效果</router-link>
     </div>
     <router-view></router-view>
   </div>
@@ -23,13 +23,17 @@ export default {
 </script>
 
 <style lang="stylus">
-.app
+*
   margin: 0
   padding: 0
+.app
+  margin-top: 10px
+  margin-left: 10px
   .tab
     height: 40px
     line-height: 40px
     font-size: 0
+    margin-bottom: 10px
   .btn
     display: inline-block
     height: 40px

@@ -1,11 +1,6 @@
 var path = require('path')
 
 module.exports = {
-  // lintOnSave: 'error',
-  // baseUrl: './',
-  // devServer: {
-  //   host: '0.0.0.0'
-  // },
   configureWebpack: {
     resolve: {
       alias: {

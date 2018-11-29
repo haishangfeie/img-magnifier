@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>普通效果</h2>
     <img-magnifier :smallSrc="smallImgSrc"
                    :magnifierSrc="magnifierSrc"
                    :maskStyle="maskStyle"
@@ -9,7 +8,7 @@
 </template>
 
 <script>
-import imgMagnifier from '@@/img-magnifier'
+import imgMagnifier from '../../../packages/img-magnifier/index'
 export default {
   components: {
     imgMagnifier
@@ -29,7 +28,7 @@ export default {
         // 小图片的宽高
         smallImgWidth: 400,
         smallImgHeight: 400,
-        // 放大镜图片的宽高，注意是这里是图片的尺寸而不是
+        // 放大镜图片的宽高，注意是这里是图片的尺寸而不是放大镜显示的区域
         magnifierWidth: 800,
         magnifierHeight: 800,
         magnifierPosWay: 'absolute',

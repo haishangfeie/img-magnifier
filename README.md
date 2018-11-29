@@ -1,10 +1,5 @@
 # img-magnifier
 
-# 暂时无法npm下载，组件可以直接在example/components/img-magnifier这个文件夹获取使用。
-
-因为之前没有试过发布组件到npm，还在探索过程中。
-
-
 > 基于 vue 的图片放大组件
 
 ## 安装
